@@ -9,7 +9,7 @@ public class GroceryList
         String item1;
         String item2;
         String item3;
-        out.println("Please three items on your grocery list.");
+        out.println("Please list three items for your shopping trip.");
         item1= keyboard.next();
         item2= keyboard.next();
         item3= keyboard.next();
