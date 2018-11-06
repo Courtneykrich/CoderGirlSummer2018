@@ -1,6 +1,7 @@
+
 import java.util.ArrayList;
 
-public class Pattern {
+public abstract class Pattern {
     private String name;
     private float needleJamRate;
     private Stitch asciiChar;
@@ -16,8 +17,6 @@ public class Pattern {
 
     }
 
-    public void pattern(){
-        System.out.println(pattern);
-    }
+    public abstract void pattern();
 
 }
