@@ -1,9 +1,12 @@
 import java.util.ArrayList;
 
+
 public class Stitch {
     private String name;
-    private String  asciiChar;
-    //private int asciiValue;
+    private String asciiChar;
+    private int asciiValue;
+
+
    // private ArrayList<Stitch> allStitch = new ArrayList<Stitch>(7);
 
 
@@ -12,16 +15,19 @@ public class Stitch {
         this.asciiChar = asciiChar;
         //this.asciiValue = asciiValue;
     }
-    static Stitch firstStitch = new Stitch("ShortLineStitch","-");
-
-    public String toString(){
-        return this.asciiChar;
-    }
     public void sew(){
         System.out.println(asciiChar);
     }
-    public static void main(String[]args){
-        firstStitch.sew();
+
+    public String getName() {
+        return name;
     }
 
+    public String getAsciiChar() {
+        return asciiChar;
+    }
+
+    public int getAsciiValue() {
+        return asciiValue;
+    }
 }
