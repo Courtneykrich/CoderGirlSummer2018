@@ -1,22 +1,21 @@
 
 import java.util.ArrayList;
 
-public abstract class Pattern {
-    private String name;
-    private float needleJamRate;
-    private Stitch asciiChar;
-    private ArrayList<Stitch> pattern;
+public class Pattern {
 
-    public Pattern(String name, float needleJamRate, ArrayList<Stitch> pattern){
-        this.name = name;
-        this.needleJamRate = needleJamRate;
-        for (Stitch stitch : this.pattern = pattern) {
+    public Pattern() {
+    }
 
+    protected ArrayList<Stitch> patStitchs;
+
+    public void addStitch(Stitch newStitch) {
+        patStitchs.add(newStitch);
+    }
+
+
+    public void printPattern () {
         }
-        
+
 
     }
 
-    public abstract void pattern();
-
-}

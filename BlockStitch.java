@@ -1,6 +1,7 @@
 public class BlockStitch extends Stitch {
 
-    public BlockStitch(String name, String asciiChar) {
-        super(name, asciiChar);
+    public BlockStitch(String asciiChar) {
+        super(asciiChar);
     }
+    Stitch block = new Stitch("[]");
 }

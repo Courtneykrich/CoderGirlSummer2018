@@ -1,16 +1,14 @@
+import java.util.ArrayList;
+
 public class Stitch {
     private String name;
     private String asciiChar;
     private int asciiValue;
 
-
-   // private ArrayList<Stitch> allStitch = new ArrayList<Stitch>(7);
-
-
-    public Stitch(String name, String asciiChar){
-        this.name = name;
+    public Stitch(String asciiChar){
+        //this.name = name;
         this.asciiChar = asciiChar;
-        //this.asciiValue = asciiValue;
+
     }
     public void sew(){
         System.out.println(asciiChar);
@@ -29,19 +27,21 @@ public class Stitch {
     }
 
     public static void main(String[]args){
-        Stitch shortLine = new Stitch("ShortLineStitch", "-");
+        Stitch shortLine = new Stitch("-");
+        //allStitch.add(shortLine);
         shortLine.sew();
-        Stitch smallCross = new Stitch("SmallCrossStitch","x");
+        Stitch smallCross = new Stitch("x");
         smallCross.sew();
-        Stitch largeCross = new Stitch("LargeCrossStitch","X");
+        Stitch largeCross = new Stitch("X");
         largeCross.sew();
-        Stitch circle = new Stitch("CirleStitch","o");
+        Stitch circle = new Stitch("o");
         circle.sew();
-        Stitch fill = new Stitch("FillStitch","=");
+        Stitch fill = new Stitch("=");
         fill.sew();
-        Stitch block = new Stitch("BlockStitch","[]");
+        Stitch block = new Stitch("[]");
         block.sew();
-        Stitch zigZag = new Stitch("ZigZagStitch","Z");
+        Stitch zigZag = new Stitch("Z");
         zigZag.sew();
+
     }
 }

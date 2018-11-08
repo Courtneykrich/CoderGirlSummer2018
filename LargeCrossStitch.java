@@ -1,6 +1,7 @@
 public class LargeCrossStitch extends Stitch {
 
-    public LargeCrossStitch(String name, String asciiChar) {
-        super(name, asciiChar);
+    public LargeCrossStitch(String asciiChar) {
+        super(asciiChar);
     }
+    Stitch largeCross = new Stitch("X");
 }
