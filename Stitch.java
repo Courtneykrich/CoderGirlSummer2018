@@ -6,41 +6,41 @@ public class Stitch {
     private int asciiValue;
 
     public Stitch(String asciiChar){
-        //this.name = name;
+
         this.asciiChar = asciiChar;
 
     }
     public void sew(){
-        System.out.println(asciiChar);
+        System.out.print(asciiChar);
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getAsciiChar() {
-        return asciiChar;
-    }
-
-    public int getAsciiValue() {
-        return asciiValue;
-    }
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public String getAsciiChar() {
+//        return asciiChar;
+//    }
+//
+//    public int getAsciiValue() {
+//        return asciiValue;
+//    }
 
     public static void main(String[]args){
-        Stitch shortLine = new Stitch("-");
-        //allStitch.add(shortLine);
+
+        ShortLineStitch shortLine = new ShortLineStitch();
         shortLine.sew();
-        Stitch smallCross = new Stitch("x");
+        SmallCrossStitch smallCross = new SmallCrossStitch();
         smallCross.sew();
-        Stitch largeCross = new Stitch("X");
+        LargeCrossStitch largeCross = new LargeCrossStitch();
         largeCross.sew();
-        Stitch circle = new Stitch("o");
+        CircleStitch circle = new CircleStitch();
         circle.sew();
-        Stitch fill = new Stitch("=");
-        fill.sew();
-        Stitch block = new Stitch("[]");
+        FillStitch fillStitch = new FillStitch();
+        fillStitch.sew();
+        BlockStitch block = new BlockStitch();
         block.sew();
-        Stitch zigZag = new Stitch("Z");
+        ZigZagStitch zigZag = new ZigZagStitch();
         zigZag.sew();
 
     }

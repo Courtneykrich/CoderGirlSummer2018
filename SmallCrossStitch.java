@@ -1,7 +1,8 @@
 public class SmallCrossStitch extends Stitch {
 
-    public SmallCrossStitch(String asciiChar) {
-        super(asciiChar);
+    public SmallCrossStitch() {
+        super("x")
+        ;
     }
-    Stitch smallCross = new Stitch("x");
 }
+

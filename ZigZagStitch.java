@@ -1,8 +1,9 @@
 public class ZigZagStitch extends Stitch {
 
 
-    public ZigZagStitch(String asciiChar) {
-        super(asciiChar);
+    public ZigZagStitch() {
+
+        super("Z");
     }
-    Stitch zigZag = new Stitch("Z");
+
 }

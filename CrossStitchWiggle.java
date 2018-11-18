@@ -1,38 +1,38 @@
 import java.util.ArrayList;
 
 public class CrossStitchWiggle extends Pattern {
-    protected ArrayList<Stitch> patternStitches;
-    double jamRate;
 
-    public CrossStitchWiggle(ArrayList<Stitch> patternStitches) {
-        this.patternStitches = patternStitches;
+    private SmallCrossStitch one;
+    private LargeCrossStitch two;
 
+    public CrossStitchWiggle() {
+        super(.05);
+        this.one = new SmallCrossStitch();
+        this.two = new LargeCrossStitch();
+// above is defining the stitches for this pattern
 
-        SmallCrossStitch first = new SmallCrossStitch("x");
-        patternStitches.add(first);
-        LargeCrossStitch second = new LargeCrossStitch("X");
-        patternStitches.add(second);
-        patternStitches.add(first);
-        patternStitches.add(second);
-        patternStitches.add(first);
-        patternStitches.add(second);
-        patternStitches.add(first);
-        patternStitches.add(second);
-        patternStitches.add(first);
-        patternStitches.add(second);
-
-    }
-
-    public void printPattern() {
-        for (int i = 0; i < patternStitches.size(); i++) {
-            System.out.println(patternStitches);
+        for(int i= 0; i < 10; i++){
+            this.patternStitches.add(i,one);
+            i++;
+            this.patternStitches.add(i,two);
         }
+        // adding the stitches to the arrayList
     }
 
+
+    
     public static void main(String[] args) {
+        CrossStitchWiggle crossWiggle = new CrossStitchWiggle();
+        crossWiggle.printPattern();
 
 
     }
+
+
+
+//    public static void printPattern(ArrayList<Stitch> crossWiggle) {
+//        for (int i = 0; i < crossWiggle.size(); i++) {
+//            System.out.print(crossWiggle.toString());
+//        }
+//    }
 }
-//for(int i=10; i>1; i--){
-//              System.out.println("The value of i is: "+i);

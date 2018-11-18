@@ -1,9 +1,9 @@
 public class ShortLineStitch extends Stitch{
 
-    public ShortLineStitch(String name, String asciiChar) {
-        super(asciiChar);
+    public ShortLineStitch() {
+        super("-");
 
     }
-    Stitch shortLine = new Stitch("-");
+
 
 }

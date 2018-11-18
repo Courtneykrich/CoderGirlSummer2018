@@ -1,7 +1,7 @@
 public class FillStitch extends Stitch {
 
-    public FillStitch( String asciiChar) {
-        super(asciiChar);
+    public FillStitch() {
+        super("=");
     }
-    Stitch fill = new Stitch("=");
+
 }

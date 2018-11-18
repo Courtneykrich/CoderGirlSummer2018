@@ -1,7 +1,8 @@
 public class CircleStitch extends Stitch {
 
-    public CircleStitch( String asciiChar) {
-        super(asciiChar);
+    public CircleStitch()
+    {
+        super("o");
     }
-    Stitch circle = new Stitch("o");
+
 }
