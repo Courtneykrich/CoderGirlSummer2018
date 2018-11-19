@@ -28,6 +28,7 @@ public class Pattern {
         for (int i = 0; i < printLength; i++) {
            patternStitches.get(i).sew();
         }
+
     }
 
 
